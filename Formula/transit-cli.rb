@@ -1,4 +1,4 @@
-class TransitCli < Formula
+class transit < Formula
   desc "Transit is a versatile command-line interface (CLI) tool designed to streamline the workflow of developers by allowing them to store and execute a series of frequently used terminal commands all at once. This tool is ideal for automating repetitive tasks, thereby saving valuable time and increasing productivity."
   homepage "https://github.com/Anslem1/transit-cli"
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.0/transit_Darwin_arm64.tar.gz"
