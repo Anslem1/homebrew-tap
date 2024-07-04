@@ -4,7 +4,7 @@ class TransitCli < Formula
   
   # Define placeholders for URL and SHA256 (to be populated by GitHub Actions)
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_arm64.tar.gz"
-  sha256 "6c88a052d129df6f2a7a44f5efc8fbc617ebb90e60e784ed21986e3307a3db6d"
+  sha256 "cc12c3849414147cacbac7cf483f6086e8c3ab6f353d189e7da9eec3f4e9b792"
   
   # License of the software
   license "Apache-2.0"
