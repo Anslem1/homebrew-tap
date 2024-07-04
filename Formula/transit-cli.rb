@@ -6,44 +6,30 @@ class TransitCli < Formula
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_arm64.tar.gz"
   sha256 "cc12c3849414147cacbac7cf483f6086e8c3ab6f353d189e7da9eec3f4e9b792"
   
-  # License of the software
   license "Apache-2.0"
   
-  # Specify installation steps
   def install
-    # Install the transit binary into the 'bin' directory
     bin.install "transit"
   end
   
-  # Test block to verify installation
   test do
-    # Run transit with the ersion flag command and check for output
     assert_match /^v\d+\.\d+\.\d+$/, shell_output("#{bin}/transit --version")
   end
-  
-  # Specify bottle block if needed for bottle creation
-  # bottle do
-  #   root_url "https://github.com/Anslem1/transit-cli/releases/download/#{version}"
-  #   cellar :any_skip_relocation
-  #   sha256 "#{sha256}" => :catalina
-  # end
-  
-  # Define a method to update URL and SHA256 based on platform
-  def update_from_workflow(version, sha256, platform)
+
+  # Method to update URL and SHA256 based on platform
+  def self.update_from_workflow(version, sha256, platform)
     case platform
     when "linux"
-      self.class.url "https://github.com/Anslem1/transit-cli/releases/download/#{version}/transit_Linux_x86_64.tar.gz"
+      url "https://example.com/transit/transit_linux_amd64.tar.gz"
     when "darwin"
-      self.class.url "https://github.com/Anslem1/transit-cli/releases/download/#{version}/transit_Darwin_x86_64.tar.gz"
+      url "https://example.com/transit/transit_darwin_amd64.tar.gz"
     when "windows"
-      self.class.url "https://github.com/Anslem1/transit-cli/releases/download/#{version}/transit_Windows_x86_64.zip"
+      url "https://example.com/transit/transit_windows_amd64.zip"
     else
       raise "Unsupported platform: #{platform}"
     end
     
-    self.class.sha256 "#{sha256}"
+    sha256 "#{sha256}"
   end
 end
 
-# Call the `update_from_workflow` method with values from GitHub Actions
-TransitCli.new.update_from_workflow(ENV['VERSION'], ENV['SHA256'], ENV['PLATFORM'])
