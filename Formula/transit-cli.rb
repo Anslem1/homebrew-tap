@@ -3,8 +3,6 @@ class TransitCli < Formula
   homepage "https://github.com/Anslem1/transit-cli"
   license "Apache-2.0"
 
-  # Define separate blocks for each platform
-
   # macOS amd64
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_darwin_amd64.tar.gz" sha256 "b33851b1dc0fd64b7f04a778951351e382fbfcdb6e2ae98c5e10261b55e85808"
   sha256 "b33851b1dc0fd64b7f04a778951351e382fbfcdb6e2ae98c5e10261b55e85808"
