@@ -3,8 +3,8 @@ class TransitCli < Formula
   homepage "https://github.com/Anslem1/transit-cli"
   
   # Define placeholders for URL and SHA256 (to be populated by GitHub Actions)
-  url ""
-  sha256 ""
+  url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_arm64.tar.gz"
+  sha256 "6c88a052d129df6f2a7a44f5efc8fbc617ebb90e60e784ed21986e3307a3db6d"
   
   # License of the software
   license "Apache-2.0"
