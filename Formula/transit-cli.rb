@@ -12,7 +12,8 @@ class TransitCli < Formula
    sha256 "3126abf91a66229195f6ce042ad8c352dcbbd32b6303ee12707943426cffbf12"
 
   # Linux amd64
-  url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_linux_amd64.tar.gz" 
+  url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_linux_amd64.tar.gz"
+  sha256 "4f2dc1efedb04c45e28ba800996a89b6ed4453701a774e8f661000075e6b055a"
   sha256 "3a32adea38286323b90f4d92caa79b15e4594e9f73db7f39b7d4647ccb3a8968"
 
   # Linux arm64
