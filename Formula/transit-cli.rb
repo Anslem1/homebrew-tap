@@ -6,11 +6,13 @@ class TransitCli < Formula
   # macOS amd64
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_darwin_amd64.tar.gz"
   sha256 ""
+  sha256 ""
 
 
 
   # macOS arm64
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_darwin_arm64.tar.gz"
+  sha256 ""
   sha256 ""
 
 
@@ -19,21 +21,25 @@ class TransitCli < Formula
   # Linux amd64
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_linux_amd64.tar.gz"
   sha256 ""
+  sha256 ""
 
 
 
   # Linux arm64
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_linux_arm64.tar.gz"
   sha256 ""
+  sha256 ""
 
 
   # Windows amd64
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_amd64.tar.gz"
   sha256 ""
+  sha256 ""
   
 
   # Windows arm64
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_arm64.tar.gz"
+  sha256 ""
   sha256 ""
 
   
