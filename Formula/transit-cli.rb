@@ -26,11 +26,11 @@ class TransitCli < Formula
 
   elsif OS.windows? && Hardware::CPU.intel?
     url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_amd64.tar.gz"
-  
+  sha256 "4c5c44800f95a193d4146dea39e465326a320582dc837eb657b6fd567a07635e"
 
   elsif OS.windows? && Hardware::CPU.arm?
     url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_arm64.tar.gz"
-    
+sha256 "242c99c4825b613aeb64acbbc5790580aaa2a70047b3e332abd98ee68b1e8cca"
  
   end
 
