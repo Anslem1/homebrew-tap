@@ -44,7 +44,7 @@ class TransitCli < Formula
   
   # Windows arm64
   url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_arm64.zip"
-  sha256 "e165a86dbf2b3d85c3186eb7b82bed77fac41aff371076f2e1b5201efc923bbd"
+  sha256 ""
   
 
   def install
