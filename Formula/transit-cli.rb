@@ -3,53 +3,27 @@ class TransitCli < Formula
   homepage "https://github.com/Anslem1/transit-cli"
   license "Apache-2.0"
 
-  # macOS amd64
-  url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_darwin_amd64.tar.gz"
-  sha256 "ddeb707538deb46afc4ceafe05c171971ca6b3e57aa6ca61beca81869e4630e1"
+  version "1.0.1"
 
-
-
-
-
-
-  # macOS arm64
-  url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_darwin_arm64.tar.gz"
-  sha256 "3d3b11cae71e1b69dcc170597e2db7315bd9935eb8bb2b3166b30ac84e8dbc33"
-
-
-
-
-
-
-
-  # Linux amd64
-  url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_linux_amd64.tar.gz"
-  sha256 "56a285f1622b18484cb23300c527d9dac82a58f4ab19c562f3fbb83054938ed8"
-
-
-
-
-
-
-  # Linux arm64
-  url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_linux_arm64.tar.gz"
-  sha256 "b89584c06cedc8f93bcebe001a446e45732a439d147914fed122aeae39cc1897"
-
-
-
-
-
-  # Windows amd64
-  url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_amd64.zip"
-  sha256 "f2a216a492989fb793b556d68adc7f22bd43a2ddc7d87bc7c1a885b21fc9b07f"
-  
-
-  
-  # Windows arm64
-  url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_arm64.zip"
-  sha256 "c376c9afd430d9f3fbf6a8a2b5c821d7eb6e28d974a2503b5b675920833781d5"
-
-  
+  if OS.mac? && Hardware::CPU.intel?
+    url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_darwin_amd64.tar.gz"
+    sha256 "abc123..."
+  elsif OS.mac? && Hardware::CPU.arm?
+    url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_darwin_arm64.tar.gz"
+    sha256 "def456..."
+  elsif OS.linux? && Hardware::CPU.intel?
+    url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_linux_amd64.tar.gz"
+    sha256 "ghi789..."
+  elsif OS.linux? && Hardware::CPU.arm?
+    url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_linux_arm64.tar.gz"
+    sha256 "jkl012..."
+  elsif OS.windows? && Hardware::CPU.intel?
+    url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_amd64.zip"
+    sha256 "mno345..."
+  elsif OS.windows? && Hardware::CPU.arm?
+    url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.1/transit_windows_arm64.zip"
+    sha256 "pqr678..."
+  end
 
   def install
     bin.install "transit"
