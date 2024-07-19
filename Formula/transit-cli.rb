@@ -3,22 +3,22 @@ class TransitCli < Formula
   homepage "https://github.com/Anslem1/transit-cli"
   if OS.mac? && Hardware::CPU.intel?
     url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.0/transit-cli_v1.0.0_darwin_amd64.tar.gz"
-    sha256 "0e195f70491b96228c64f85ba7ff3cd18d2ad9841ac1aa9ddb7db3c534a2da96"
+    sha256 "577c302e6e9226d29e60fedce64aa4f122ef5e3ad4fff4624ed0a668ab0ee51c"
   elsif OS.mac? && Hardware::CPU.arm?
     url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.0/transit-cli_v1.0.0_darwin_arm64.tar.gz"
-    sha256 "05673235a1710c9ccc73b9fd6ba5a37f746da760f29c379c921c4d29f9a9f0d9"
+    sha256 "f704f68faacd35fafca239ea13f68f3aa584e71ab5c8e5eaf822d6a533a8d69a"
   elsif OS.linux? && Hardware::CPU.intel?
     url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.0/transit-cli_v1.0.0_linux_amd64.tar.gz"
-    sha256 "1543a5797ff05f3ab5f7f27964b7f9d3ef19b7aa02f71c99fcc5faa21f6b3064"
+    sha256 "a635ae220b9b5aae23871bfe2196f916c72e684c3a0f4de07cbc4b13654e13a0"
   elsif OS.linux? && Hardware::CPU.arm?
     url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.0/transit-cli_v1.0.0_linux_arm64.tar.gz"
-    sha256 "d3c3e12ce54c4c7f045e5bade0824eef4c2d0482ff8f462338f1335afc060a40"
+    sha256 "456661ba274ef8c88891aca1794efebda6697f6f479fcb4ae2ff943852089e14"
   elsif OS.windows? && Hardware::CPU.intel?
     url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.0/transit-cli_v1.0.0_windows_amd64.zip"
-    sha256 "f21d25326ecb4e525b790645f76cff819af1376091d9737affe708c01f490e37"
+    sha256 "20254033ab440eed481642d8ce45d166e4e6bfeb58f3941921b458811c5e33bb"
   elsif OS.windows? && Hardware::CPU.arm?
     url "https://github.com/Anslem1/transit-cli/releases/download/v1.0.0/transit-cli_v1.0.0_windows_arm64.zip"
-    sha256 "49e72bcfaa98ed16118493d0293ad277917bbc358c4ad208baf14fb429096862"
+    sha256 "e354e1a91c43d9d9b2e2bcc7ee1add49e31df543fba6dc27bb57492f6c5eda31"
   end
   def install
     bin.install "transit"
